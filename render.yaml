@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fco-ai-analyzer
+    runtime: docker
+    plan: starter
+    autoDeploy: true
+    envVars:
+      - key: DATA_DIR
+        value: /var/data
+      - key: PORT
+        value: 10000
+    disk:
+      name: fco-ai-data
+      mountPath: /var/data
+      sizeGB: 1

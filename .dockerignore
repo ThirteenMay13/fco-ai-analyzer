@@ -1,0 +1,8 @@
+.venv
+.pytest_cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+reports
+fco_ai_analyzer.sqlite3
